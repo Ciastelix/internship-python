@@ -1,0 +1,295 @@
+{
+  "mappings": {
+    "properties": {
+      "id": {
+        "type": "keyword"
+      },
+      "object": {
+        "type": "text"
+      },
+      "is_accepted": {
+        "type": "text"
+      },
+      "is_partner": {
+        "type": "text"
+      },
+      "projects_count": {
+        "type": "text"
+      },
+      "initials": {
+        "type": "text"
+      },
+      "projects_allocated": {
+        "type": "nested",
+        
+        "properties": {
+          "allocation_id": {
+            "type": "integer"
+          },
+          "project_id": {
+            "type": "integer"
+          },
+          "project_name": {
+            "type": "text"
+          },
+          "vacancy_id": {
+            "type": "integer"
+          },
+          "vacancy_role": {
+            "type": "text"
+          },
+          "vacancy_status": {
+            "type": "text"
+          },
+          "created_at": {
+            "type": "date"
+          },
+          "updated_at": {
+            "type": "date"
+          }
+        }
+      },
+
+      "intranet_id": {
+        "type": "integer"
+      },
+      "role": {
+        "type": "text"
+      },
+      "seniority": {
+        "type": "text"
+      },
+      "versatility": {
+        "type": "text"
+      },
+      "english_skills": {
+        "type": "text"
+      },
+      "major_powers": {
+        "type": "text"
+      },
+      "link_to_cv": {
+        "type": "text"
+      },
+      "availability": {
+        "type": "text"
+      },
+      "is_available": {
+        "type": "boolean"
+      },
+      "name": {
+        "type": "text"
+      },
+      "img": {
+        "type": "text"
+      },
+      "email": {
+        "type": "text"
+      },
+      "is_active": {
+        "type": "boolean"
+      },
+      "partner": {
+        "type": "boolean"
+      },
+      "is_client": {
+        "type": "boolean"
+      },
+      "is_freelancer": {
+        "type": "boolean"
+      },
+      "is_uop": {
+        "type": "boolean"
+      },
+      "skype": {
+        "type": "text"
+      },
+      "github": {
+        "type": "text"
+      },
+      "employee_location": {
+        "type": "text"
+      },
+      "phone": {
+        "type": "text"
+      },
+      "phone_on_desk": {
+        "type": "text"
+      },
+      "zulip": {
+        "type": "text"
+      },
+      "location": {
+        "type": "text"
+      },
+      "start_work": {
+        "type": "date"
+      },
+      "start_full_time_work": {
+        "type": "date"
+      },
+      "start_work_exp": {
+        "type": "date"
+      },
+      "stop_work": {
+        "type": "date"
+      },
+      "date_of_birth": {
+        "type": "date"
+      },
+      "groups": {
+        "type": "text"
+      },
+      "roles": {
+        "type": "text"
+      },
+      "roles_json": {
+        "type": "nested",
+
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "text"
+          },
+          "shortcut": {
+            "type": "text"
+          }
+        }
+      },
+      "teams": {
+        "type": "integer"
+      },
+      "teams_json": {
+        "type": "nested",
+        
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "text"
+          }
+        }
+      },
+      "avatar_url": {
+        "type": "text"
+      },
+      "all_perms": {
+        "type": "text"
+      },
+      "room": {
+        "type": "text"
+      },
+      "powers": {
+        "type": "nested",
+        
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "text"
+          },
+          "level": {
+            "type": "integer"
+          },
+          "add_date": {
+            "type": "date"
+          },
+          "edit_date": {
+            "type": "date"
+          },
+          "category_id": {
+            "type": "integer"
+          },
+          "category_name": {
+            "type": "text"
+          }
+        }
+      },
+      "educations": {
+        "type": "nested",
+        
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "user_id": {
+            "type": "integer"
+          },
+          "facility_name": {
+            "type": "text"
+          },
+          "education_field": {
+            "type": "text"
+          },
+          "graduation_date": {
+            "type": "date"
+          },
+          "still_enrolled": {
+            "type": "boolean"
+          },
+          "education_level": {
+            "type": "text"
+          }
+        }
+      },
+      "languages": {
+        "type": "nested",
+        
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "user_id": {
+            "type": "integer"
+          },
+          "language_level": {
+            "type": "text"
+          },
+          "language_id": {
+            "type": "integer"
+          },
+          "language_name": {
+            "type": "text"
+          }
+        }
+      },
+      "licenses": {
+        "type": "nested",
+        
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "user_id": {
+            "type": "integer"
+          },
+          "license_name": {
+            "type": "text"
+          },
+          "issuing_organization": {
+            "type": "text"
+          },
+          "issue_date": {
+            "type": "date"
+          }
+        }
+      },
+      "department": {
+        "type": "integer"
+      },
+      "department_name": {
+        "type": "text"
+      },
+      "seniority_name": {
+        "type": "text"
+      },
+      "versatility_name": {
+        "type": "text"
+      }
+    }
+  }
+}

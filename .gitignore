@@ -1,0 +1,6 @@
+.venv
+.DS_STORE
+poetry.lock
+pyproject.toml
+.vscode
+db.json

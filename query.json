@@ -1,0 +1,30 @@
+{
+  "bool": {
+    "must": [
+      {
+        "nested": {
+          "path": "powers",
+          "query": {
+            "match": {
+              "powers.name": "Python"
+            }
+          }
+        }
+      },
+      {
+        "nested": {
+          "path": "projects_allocated",
+          "query": {
+            "bool": {
+              "must_not": {
+                "exists": {
+                  "field": "projects_allocated"
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}
